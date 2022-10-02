@@ -1,0 +1,107 @@
+body {      
+    background: #1CD8D2 !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93EDC7, #1CD8D2) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+.navbar-brand {
+    margin-left: 10%;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: #0ee415;
+}
+
+#my404 {     
+    margin: 50px auto;  
+    color: white;    
+}
+
+#my404 h1 {    
+    font-family: 'montserrat', sans-serif;
+    font-size: 15rem;  
+    letter-spacing: 3.5px;           
+}
+
+#bigbubble {
+    width: 20%;
+}
+
+/* Bubbles animation */
+
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{        
+        opacity: 1;
+    }
+    70%{        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }    
+}
+
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(4) {
+    animation-delay: 4.5s;
+    width: 10px;
+}
+
+.bubbles img:nth-child(5) {
+    animation-delay: 3s;
+}
+
+.bubbles img:nth-child(6) {
+    animation-delay: 6s;
+    width: 20px;
+}
+
+.bubbles img:nth-child(7) {
+    animation-delay: 7s;
+    width: 35px;
+}
+
+@media (max-width: 1028px) {
+
+    #my404 h1 {
+      font-size: 10rem;
+    }
+  
+    #bigbubble {
+        width: 25%;
+    }
+  
+  }
